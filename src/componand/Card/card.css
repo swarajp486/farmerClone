@@ -1,0 +1,95 @@
+.card {
+  width: clamp(100%, 100%, 100%);
+  background: linear-gradient(
+    180deg,
+    var(--fff, rgb(255, 255, 255)) 0%,
+    var(--gbcolor, #fdf2ec) 100%
+  );
+  padding-bottom: 5rem;
+}
+.card-con {
+  margin: 8rem 10rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 30px;
+}
+.card-l {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+  margin: 20px;
+}
+.card-l span {
+  padding: 5px 10px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 10px;
+  width: max-content;
+  font-weight: boler;
+  font-size: 10px;
+}
+.card-l h1 {
+  font-size: 35px;
+}
+.card-l h1 span {
+  border: none;
+  padding: 0;
+  font-size: 35px;
+  color: rgb(254, 192, 98);
+}
+.card p {
+  color: rgb(123, 117, 117);
+  font-size: 18px;
+}
+.card-l button {
+  padding: 10px;
+  font-size: 18px;
+  width: 50%;
+  border: 1px solid rgb(167, 97, 199);
+  background-color: rgb(175, 105, 207);
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.card-r {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+.card-r h3 {
+  padding: 10px;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 9px;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgb(148, 135, 135);
+}
+.card h3 span {
+  color: rgb(175, 105, 207);
+}
+.card-r img {
+  width: 100%;
+}
+
+@media screen and (max-width: 810px) {
+  .card-con {
+    margin: 2rem;
+    flex-direction: column;
+  }
+  .card-l {
+    width: 80%;
+  }
+  .card-r {
+    width: 80%;
+  }
+}

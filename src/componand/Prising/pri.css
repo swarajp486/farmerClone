@@ -1,0 +1,139 @@
+#Pricing {
+  width: clamp(100%, 100%, 100%);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pri,
+.pri-u {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pri-u span {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  font-size: 11px;
+  color: blue;
+  font-weight: bold;
+}
+.pri-u h2 {
+  font-size: 35px;
+}
+.pri-u h2 span {
+  color: rgb(254, 129, 98);
+  border: none;
+  font-size: 35px;
+}
+
+.pri-u p {
+  color: rgb(68, 65, 65);
+  font-size: 13px;
+}
+.pri-d {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 80%;
+  margin-top: 40px;
+}
+
+.pri-card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid rgb(237, 237, 250);
+  border-radius: 25px;
+  background-color: rgb(237, 237, 250);
+}
+.pri-card span {
+  padding: 3px 6px;
+  border: 1px solid lightgray;
+  font-size: 8px;
+  color: rgb(254, 129, 98);
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.pri-card div {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: end;
+}
+.pri-card div h2 {
+  font-size: 40px;
+}
+.pri-card div span {
+  border: none;
+  padding: 0;
+  background-color: rgb(237, 237, 250);
+  color: black;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.pri-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.pri-card ul li {
+  font-size: 12px;
+  color: rgb(68, 65, 65);
+}
+.pri-card ul li::before {
+  content: "✔";
+  color: rgb(67, 214, 126);
+  display: inline-block;
+  margin-right: 10px;
+}
+.pri-card button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: black;
+  background-color: #fff;
+  font-size: 15px;
+}
+.pri-card-b {
+  background-color: black;
+  color: #fff;
+}
+.pri-card-b div span {
+  background-color: black;
+  color: #fff;
+}
+.pri-card-b ul li {
+  color: rgb(118, 113, 113);
+}
+.pri-card-b button {
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 760px) {
+  .pri-d {
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 80%;
+  }
+
+  .pri-card {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,130 @@
+header {
+  width: clamp(100%, 100%1 100%);
+  background-color: var(--bgcolor);
+  overflow: hidden;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 3vh;
+}
+
+.logo {
+  width: 130px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.menu-con ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.menu-con ul li,
+.menu-con ul a,
+.menu-c-con ul li a,
+.menu-c-con ul li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-c-con ul li :hover {
+  color: rgb(159, 159, 248);
+  font-weight: bolder;
+}
+.menu-con ul li :hover {
+  color: rgb(137, 137, 243);
+}
+.menu-but button {
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: bolder;
+  border: 1px solid #dcdcdc;
+}
+
+.menu-but button:hover {
+  border: 1px solid black;
+}
+
+.dotafter::before {
+  content: "";
+  display: inline-block; /* Ensures it's an inline block to allow width and height */
+  width: 4px; /* Adjust the width as needed */
+  height: 4px; /* Adjust the height as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  background-color: rgb(220, 219, 219);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 810px) {
+  .dotafter::before {
+    display: none;
+    visibility: hidden;
+  }
+  .menu-con-con li,
+  .menu-but {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .menu-c-con ul li {
+    padding: 20px;
+  }
+  .menu-con-con,
+  .menu-c-con {
+    padding-bottom: 20px;
+  }
+  header {
+    border: none;
+  }
+
+  .menu-but button {
+    width: 80%;
+    background-color: rgb(166, 0, 255);
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .menu-but button:hover {
+    border: 1px solid #fff;
+    animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      infinite alternate both;
+  }
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 180px;
+  }
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}

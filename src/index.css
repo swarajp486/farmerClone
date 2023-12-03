@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bgcolor: rgb(253, 242, 236);
+  --framer-font-family: "Outfit", sans-serif;
+  --framer-font-size: 60px;
+  --framer-font-style: normal;
+  --framer-font-weight: 500;
+  --framer-letter-spacing: -2px;
+  --framer-line-height: 1em;
+  --framer-paragraph-spacing: 40px;
+  --framer-text-alignment: center;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+}
